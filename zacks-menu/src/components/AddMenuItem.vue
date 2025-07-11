@@ -1,6 +1,6 @@
 <template>
 <div class="add-menu-item container">
-    <h2 class="center-align white-text">Add New Menu Item</h2>  
+    <h2 class="center-align white-text">Add New Menu Item</h2>
     <form @submit.prevent="AddMenuItem">
         <div class="field title">
             <label for="title" class="deep-orange-text ">Menu Item Name: </label>
@@ -21,12 +21,12 @@
             <input type="text" name="add-ingredient" class="white-text" @keydown.tab.prevent="addIngredient" v-model="another"/>
             <a class="btn-floating btn-small right added green darken-2"><i class="tiny material-icons" @click="addIngredient">add</i></a>
         </div>
-        
+
         <div class="field center-align">
             <p v-if="feedback" class="red-text">{{feedback}}</p>
             <button class="btn orange darken-4 right">Add Menu Item</button>
         </div>
-    </form>  
+    </form>
 </div>
 </template>
 <script>
@@ -94,7 +94,6 @@ export default {
     margin-top: 30px;
     padding: 10px;
     max-width: 60%;
-
 }
 button{
     margin-bottom: 20px;
@@ -102,12 +101,10 @@ button{
 .add-menu-item h2{
     font-size: 2em;
     margin: 20px auto;
-    
 }
 .add-menu-item .field{
     margin: 20px auto;
     position: relative;
-    
 }
 .add-menu-item .added{
     position: absolute;
@@ -124,5 +121,4 @@ button{
     font-size: 1.5em;
     cursor: pointer;
 }
-
 </style>
